@@ -27,15 +27,15 @@ WIN_COMBINATIONS = [
     @board[position] = char
   end
   def position_taken?(index_i)
-    ((@board[index_i])) == "X") || (@board[index_i]) == "0"))
-  end 
+    ((@board[index_i])) == "X") || (@board[index_i]) == "O"))
+  end
   def valid_move?(index)
     index.between?(0,8) && !position_taken?(index)
   end
   def turn_count
     number_of_turns = 0
     @board.each do |space|
-      if space == "X" || space == "0"
+      if space == "X" || space == "O"
         number_of_turns += 1
       end
   end
@@ -46,7 +46,7 @@ WIN_COMBINATIONS = [
     else
       "O"
     end
-    def turn 
+    def turn
       puts "Please enter 1-9:"
       input = gets.strip
       index = input_to_index(input)
@@ -97,6 +97,6 @@ WIN_COMBINATIONS = [
         puts "Congratulations #{winner}"
       elsif draw?
         puts "Cat's Game!"
-      end 
+      end
     end
 end
