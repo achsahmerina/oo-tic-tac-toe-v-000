@@ -13,7 +13,6 @@ WIN_COMBINATIONS=[
     [2,4,6]
   ]
 
-
   def display_board
     puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
     puts "-----------"
@@ -47,6 +46,7 @@ WIN_COMBINATIONS=[
     else
       "O"
     end
+  end
     def turn
       puts "Please enter 1-9:"
       input = gets.strip
