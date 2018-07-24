@@ -34,7 +34,7 @@ WIN_COMBINATIONS=[
     index.between?(0,8) && !position_taken?(index)
   end
   def turn_count
-    
+
     @board.count{|x| x != " "}
   end
 
@@ -93,7 +93,7 @@ WIN_COMBINATIONS=[
         turn
       end
       if won?
-        puts "Congratulations #{winner}"
+        puts "Congratulations X!"
       elsif draw?
         puts "Cat's Game!"
       end
