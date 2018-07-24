@@ -84,7 +84,7 @@ WIN_COMBINATIONS=[
           nil
         end
         end
-        end
+    end
 
     def play
       while over? == false
