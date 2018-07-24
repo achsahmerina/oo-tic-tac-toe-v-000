@@ -35,7 +35,7 @@ WIN_COMBINATIONS=[
   def turn_count
     binding.pry
   end
-      return number_of_turns
+
   def current_player
     if turn_count % 2 == 0
       "X"
@@ -95,5 +95,5 @@ WIN_COMBINATIONS=[
       elsif draw?
         puts "Cat's Game!"
       end
-
+end
 end
