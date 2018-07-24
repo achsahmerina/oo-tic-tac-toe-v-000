@@ -34,7 +34,7 @@ WIN_COMBINATIONS=[
     index.between?(0,8) && !position_taken?(index)
   end
   def turn_count
-    binding.pry
+    
     @board.count{|x| x != " "}
   end
 
