@@ -35,6 +35,7 @@ WIN_COMBINATIONS=[
   end
   def turn_count
     binding.pry
+    @board.count{|x| x != " "}
   end
 
   def current_player
