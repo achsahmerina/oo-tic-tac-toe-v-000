@@ -1,6 +1,7 @@
 class TicTacToe
   def initialize(board = nil)
     @board = board || Array.new(9, " ")
+    
 WIN_COMBINATIONS = [
     [0,1,2],
     [3,4,5],
@@ -11,6 +12,7 @@ WIN_COMBINATIONS = [
     [0,4,8],
     [2,4,6]
   ]
+  end
 
   def display_board
     puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
