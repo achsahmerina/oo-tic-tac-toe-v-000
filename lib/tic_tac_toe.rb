@@ -36,10 +36,10 @@ WIN_COMBINATIONS=[
     number_of_turns = 0
     @board.each do |space|
       if space == "X" || space == "0"
-        number_of_turns = 0
+        number_of_turns += 1
       end
   end
-  return number_of_turns
+      return number_of_turns
   def current_player
     if turn_count % 2 == 0
       "X"
